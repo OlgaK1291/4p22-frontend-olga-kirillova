@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  }
+  
+  .body {
+    position: relative;
+  }
+
+  .address-box {
+    width: 100%;
+    display: flex;
+    margin: 0;
+  }
+
+  .header {
+    position: fixed;
+    width: 100%;
+    min-height: 100px;
+    background-color: rgba(0, 122, 252, 0.978);
+    z-index: 9999;
+  }
+
+.header__container {
+  width: 100%;
+  min-height: 90px;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.header__h1 {
+  font-size: 60px;
+  margin: 0;
+  color: white;
+}
+
+.main-address-book {
+  width: 100%;
+  width: 250px;
+  margin: 0;
+}
+
+.aside-address-book {
+  position: fixed;
+  top: 120px;
+  z-index: 1;
+  border-right: 3px solid rgba(255, 255, 255, 0.07);
+}
+
+.aside-address-book__h2 {
+  font-size: 25px;
+  line-height: 30px;
+  left: 25px;
+}
+
+.aside-address-book__container {
+  position: relative;
+  left: 1px;
+  top: 1px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.aside-address-book__list {
+  font-style: normal;
+  font-size: 24px;
+  line-height: 24px;
+  margin: 14px;
+}
+
+.aside-address-book__item {
+  color: #ff8000;
+}
+
+.section-address-book {
+  position: absolute;
+  left: 300px;
+  width: 70%;
+}
+
+.section-address-book-box {
+  background-color: aliceblue;
+}
+
+.section-address-book__h2 {
+  position: sticky;
+  left: 460px;
+  top: 150px;
+  padding-left: 11px;
+  color: white;
+  background-color: blue;
+}
+
+.section-address-book__box-list {
+  list-style-type: none;
+  font-size: 26px;
+  margin-top: 150px;
+}
+
