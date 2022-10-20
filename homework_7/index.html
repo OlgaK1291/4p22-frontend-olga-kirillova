@@ -4,20 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Homework 7</title>
-  <link rel="stylesheet" href="style.css" type="text/css">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
 </head>
-<body class="content">
-  <main class="card">
-    <div class="form__title">
-      <h1 class="form__title-1">Вход</h1>
-    <form class="form-container">
-        <input class="input-text__email" aria-label="email" type="email" name="email" placeholder="Введите email">
-        <input class="input-text__password" aria-label="password" type="password" name="password" placeholder="Введите пароль">
-        <input class="checkbox" type="checkbox" id="checkbox" name="checkbox" value="TRUE">
-        <label class="label-check" for="checkbox">Я согласен получать обновления на почту</label>
-        <button class="form__button">Войти</button>
+<body class="container">
+  <form class="form" action="">
+    <header class="form__header">
+      <h1 class="form__title">Вход</h1>
+    </header>
+    <div class="form__body">
+      <div class="form__item">
+        <label class="input">
+          <span class="input__label">Email</span>
+          <input class="input__control" type="email" name="email" placeholder="Введите email">
+        </label>
       </div>
-    </form>
-  </main>
+      <div class="form__item">
+        <label class="input">
+          <span class="input__label">Пароль</span>
+          <input class="input__control" type="password" name="password" placeholder="Введите пароль">
+        </label>
+      </div>
+      <div class="form__item">
+        <label class="checkbox">
+          <input class="checkbox__control visually-hidden" type="checkbox" name="agreement">
+          <span class="checkbox__emulator"></span>
+          <span class="checkbox__label">Я согласен получать обновления на почту</span>
+        </label>
+      </div>
+
+    </div>
+    <footer class="form__footer">
+      <button class="form__submit-button button" type="submit">Войти</button>
+
+    </footer>
+  </form>
 </body>
 </html>
