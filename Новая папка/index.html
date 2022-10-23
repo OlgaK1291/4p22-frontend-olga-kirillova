@@ -3,14 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Homework 7</title>
-  <link rel="stylesheet" href="style.css" type="text/css">
+  <title>Attestation</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
 </head>
-<body class="container">
-  <form class="form" action="">
-    <header class="form__header">
-      <h1 class="form__title">Вход</h1>
-    </header>
+<body>
+  <header class="form__header">
+    <img class="header__img" src="img/1.png" loading="lazy">
+    <div class="header__title">PCS Frontend</div>
+    <div class="header__link">
+      <a class="header__registration" href=" ">Регистрация</a>
+      <a class="header__login" href="#">Вход</a>
+    </div>
+  </header>
+  <form class="form">
+    <div class="form__container">
+      <h1 class="form__title"> Вход</h1>
+    </div>
     <div class="form__body">
       <div class="form__item">
         <label class="input">
@@ -24,19 +32,10 @@
           <input class="input__control" type="password" name="password" placeholder="Введите пароль">
         </label>
       </div>
-      <div class="form__item">
-        <label class="checkbox">
-          <input class="checkbox__control visually-hidden" type="checkbox" name="agreement">
-          <span class="checkbox__emulator"></span>
-          <span class="checkbox__label">Я согласен получать обновления на почту</span>
-        </label>
-      </div>
-
     </div>
-    <footer class="form__footer">
+    <div class="form__button">
       <button class="form__submit-button button" type="submit">Войти</button>
-_footer">
-    </footer>
+    </div>
   </form>
 </body>
 </html>

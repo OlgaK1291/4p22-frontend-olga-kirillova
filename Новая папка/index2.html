@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <link href="style2.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <header class="form__header">
+    <img class="header__img" src="img/1.png" loading="lazy">
+    <div class="header__title">PCS Frontend</div>
+    <div class="header__link">
+      <a class="header__registration" href="#">Регистрация</a>
+      <a class="header__login" href="">Вход</a>
+    </div>
+  </header>
+  <form class="form">
+    <div class="form__container">
+      <h1 class="form__title"> Вход</h1>
+    </div>
+    <div class="form__body">
+      <div class="form__item">
+        <label class="input">
+          <span class="input__label">Email</span>
+          <input class="input__control" type="email" name="email" placeholder="Введите email">
+        </label>
+      </div>
+      <div class="form__item">
+        <label class="input">
+          <span class="input__label">Пароль</span>
+          <input class="input__control" type="password" name="password" placeholder="Введите пароль">
+        </label>
+      </div>
+      <div class="form__item">
+        <label class="input">
+          <span class="input__label">Подтверждение пароля</span>
+          <input class="input__control" type="password" name="password" placeholder="Подтвердите пароль">
+        </label>
+      </div>
+    </div>
+    <div class="form__radio">
+      <h2 class="radio-title">Пол</h2>
+    <div class="radio__container">
+      <input class="radio__control visually-hidden" id="radio-1" type="radio" name="gender" value="men">
+      <span class="radio__emulator"></span>
+      <label class="label__control" for="radio-1">Мужчина</label>
+    </div>
+    <div class="radio__container">
+      <input class="radio__control visually-hidden" id="radio-2" type="radio" name="gender" value="woman">
+      <span class="radio__emulator"></span>
+      <label class="label__control" for="radio-2">Женщина</label>
+    </div>
+    </div>
+    <div class="form__textarea">
+      <label class="textarea" for="textarea">О себе</label>
+       <textarea class="textarea__control" id="textarea" name="textarea">Расскажите о себе...</textarea>
+    </div>
+    <div class="form__checkbox">
+      <label class="checkbox">
+        <input class="checkbox__control visually-hidden" type="checkbox" name="agreement">
+        <span class="checkbox__emulator"></span>
+        <span class="checkbox__label">Я согласен получать обновления на почту</span>
+      </label>
+    </div>
+
+
+    <div class="form__button">
+      <button class="form__submit-button button" type="submit">Регистрация</button>
+    </div>
+  </form>
+</body>
+</html>
