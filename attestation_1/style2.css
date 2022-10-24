@@ -54,7 +54,7 @@ body {
   background-color: var(--c-light);
 }
 
-.form__header {
+.header {
   display: flex;
   width: 100%;
   height: 80px;
@@ -83,7 +83,7 @@ body {
   color: var(--c-dark);
 }
 
-.header__link {
+.header__action {
   margin-top: 25px;
   margin-right: 43px;
   margin-left: auto;
@@ -92,34 +92,41 @@ body {
   font-family: var(--base-font-family-Inter-Bold);
 }
 
-.header__registration {
-  width: 100%;
-  max-width: 157px;
-  height: 29px;
-  margin-right: 28px;
-  text-decoration: none;
-  color: var(--c-blue);
+
+.header__action-list {
+  display: flex;
+  column-gap: 28px;
+  
+
+  
 }
 
-.header__login {
+.header__action-item {
+  list-style-type: none;
+  
+}
+.header__action-link {
   width: 100%;
-  max-width: 60px;
   height: 29px;
   text-decoration: none;
   color: var(--c-dark);
 }
+
+
 
 button,
 input {
   font: inherit;
   color: inherit;
 }
+.content {
+  padding-top: 100px;
+}
 
 .form {
   width: 100%;
   max-width: 600px;
-  margin-top: 180px;
-  padding: 45px 45px;
+  padding: 45px;
   font-family: var(--base-font-family-Roboto-Bold);
   background: var(--c-light);
   color: var(--c-dark);
@@ -172,6 +179,12 @@ h1 {
   border: 2px solid var(--c-dark);
 }
 
+.textarea__control::placeholder {
+  font-size: var(--base-font-size);
+  font-family: var(--base-font-family-Roboto-Bold);
+  color: var(--c-gray);
+}
+
 .input__control::placeholder {
   font-size: var(--base-font-size);
   color: var(--c-gray);
@@ -204,12 +217,11 @@ h1 {
   color: var(--c-gray);
 }
 
-
 .form__radio {
   margin-top: 11px;
 }
 
-.radio__container {
+.input__radios {
   position: relative;
   display: flex;
   align-items: center;
@@ -217,11 +229,11 @@ h1 {
   margin-top: 9px;
 }
 
-.radio__container > input {
+.input__radios > input {
   position: absolute;
 }
 
-.radio-title {
+.input__title {
   font-size: 16px;
 }
 
@@ -248,6 +260,7 @@ h1 {
   display: block;
   width: 12px;
   height: 12px;
+  opacity: 0;
   border-radius: 50%;
   background-color: var(--c-dark);
 }
@@ -294,7 +307,6 @@ h1 {
   height: var(--size);
   margin-right: 10px;
   border: 2px solid var(--c-dark);
-  border-radius: 7px;
 }
 
 .checkbox__emulator::after {

@@ -7,14 +7,21 @@
   <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <header class="form__header">
-    <img class="header__img" src="img/1.png" loading="lazy">
+  <header class="header">
+    <img class="header__img" src="img/1.png" loading="lazy" alt="logo">
     <div class="header__title">PCS Frontend</div>
-    <div class="header__link">
-      <a class="header__registration" href="index2.html">Регистрация</a>
-      <a class="header__login" href="#">Вход</a>
-    </div>
+    <div class="header__action">
+      <ul class="header__action-list">
+        <li class="header__action-item">
+          <a class="header__action-link header__action-link--active" href="index2.html">Регистрация</a>
+        </li>
+        <li class="header__action-item">
+          <a class="header__action-link" href="#">Вход</a>
+        </li>
+      </ul>
+      </div>
   </header>
+  <main class="content">
   <form class="form">
     <div class="form__container">
       <h1 class="form__title"> Вход</h1>
@@ -37,5 +44,6 @@
       <button class="form__submit-button button" type="submit">Войти</button>
     </div>
   </form>
+</main>
 </body>
 </html>
